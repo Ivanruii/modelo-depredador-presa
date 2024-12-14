@@ -17,7 +17,7 @@ public class Main {
     private final int presaInicial;
     private final int cantidadTiempoDeSimulacion;
 
-    public Main() { 
+    public Main() {
         this.porcentajeNatalidadDepredador = leerNumFloat("Inserta el porcentaje de natalidad depredador: ");
         this.porcentajeNatalidadPresa = leerNumFloat("Inserta el porcentaje de natalidad presa: ");
         this.porcentajeMortalidadDepredador = leerNumFloat("Inserta el porcentaje de mortalidad depredador: ");
