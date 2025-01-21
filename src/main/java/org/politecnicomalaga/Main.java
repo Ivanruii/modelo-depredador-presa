@@ -11,7 +11,7 @@ public class Main {
     private final float porcentajeMortalidadPresa;
     private final float porcentajeIndiceCazaPresa;
     private final float porcentajeIndiceAlimentacion;
-    private final long maximoPresasEcosistema;
+    private final int maximoPresasEcosistema;
     private final int tiempoInicial;
     private final int depredadorInicial;
     private final int presaInicial;
@@ -24,7 +24,7 @@ public class Main {
         this.porcentajeMortalidadPresa = leerNumFloat("Inserta el porcentaje de mortalidad presa: ");
         this.porcentajeIndiceCazaPresa = leerNumFloat("Inserta el porcentaje de índice de caza de la presa: ");
         this.porcentajeIndiceAlimentacion = leerNumFloat("Inserta el porcentaje de índice de alimentación: ");
-        this.maximoPresasEcosistema = leerNumLong("Inserta el máximo de presas del ecosistema: ");
+        this.maximoPresasEcosistema = leerNumInt("Inserta el máximo de presas del ecosistema: ");
         this.tiempoInicial = leerNumInt("Inserta el año inicial: ");
         this.depredadorInicial = leerNumInt("Insertar número de depredador inicial: ");
         this.presaInicial = leerNumInt("Insertar número de presa inicial: ");
@@ -45,8 +45,7 @@ public class Main {
 
     // Inicialización del programa
 
-    public void inicializarPrograma () {
-        // TODO: Dividir la inicialización del programa
+    public void inicializarPrograma() {
         Dato datosIniciales = new Dato(
                 this.tiempoInicial,
                 this.depredadorInicial,
@@ -91,11 +90,6 @@ public class Main {
     public static float leerNumFloat(String sMensaje) {
         System.out.print(sMensaje);
         return (new Scanner(System.in)).nextFloat();
-    }
-
-    public static long leerNumLong(String sMensaje) {
-        System.out.print(sMensaje);
-        return (new Scanner(System.in)).nextLong();
     }
 
     public static int leerNumInt(String sMensaje) {

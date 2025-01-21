@@ -13,7 +13,7 @@ public class Dato {
     private int diffDepredador;
     private int diffPresa;
 
-    public Dato(int tiempo, int depredador, int presa, float porcentajeNatalidadDepredador, float porcentajeMortalidadDepredador, float porcentajeNatalidadPresa, float porcentajeMortalidadPresa, float porcentajeIndiceCazaPresa, float porcentajeIndiceAlimentacion, long maximoPresasEcosistema) {
+    public Dato(int tiempo, int depredador, int presa, float porcentajeNatalidadDepredador, float porcentajeMortalidadDepredador, float porcentajeNatalidadPresa, float porcentajeMortalidadPresa, float porcentajeIndiceCazaPresa, float porcentajeIndiceAlimentacion, int maximoPresasEcosistema) {
         this.tiempo = tiempo;
 
         this.depredador = depredador;
